@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/danielgindi/ChartsRealm.git", :tag => "v#{s.version}" }
   s.source_files  = "ChartsRealm/Classes/**/*.swift"
   s.dependency "Charts", "3.0.4"
-  s.dependency "RealmSwift", "~> 2.10"
+  s.dependency "RealmSwift", "~> 3.02"
 end
