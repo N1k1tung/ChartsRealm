@@ -42,7 +42,7 @@ open class RealmPieDataSet: RealmBaseDataSet, IPieChartDataSet
         
         if results != nil
         {
-            converted = ObjectiveCSupport.convert(object: results!)
+            converted = ObjectiveCSupport.convert(object: results!) as? RLMResults<RLMObject>
         }
         
         self.init(results: converted, yValueField: yValueField, labelField: labelField)
